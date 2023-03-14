@@ -26,18 +26,18 @@
 				<nav class="header-navigation">
 					<a href="./index.html" class="header-logo link"><span> Web</span>Studio</a>
 					<ul class="header-list list">
-						<li class="header-item"><a href="" class="header-item-link link heading">Studio</a></li>
-						<li class="header-item"><a href="./portfolio.html" class="header-item-link link heading">Portfolio</a></li>
-						<li class="header-item"><a href="" class="header-item-link link heading">Contacts</a></li>
+						<li class="header-item"><a href="" class="header-item-link current link">Studio</a></li>
+						<li class="header-item"><a href="./portfolio.html" class="header-item-link link">Portfolio</a></li>
+						<li class="header-item"><a href="" class="header-item-link link">Contacts</a></li>
 					</ul>
 				</nav>
 				<address class="header-address">
 					<ul class="header-list list">
 						<li class="header-item">
-							<a href="mailto:info@devstudio.com" class="header-link link heading">info@devstudio.com</a>
+							<a href="mailto:info@devstudio.com" class="header-link link">info@devstudio.com</a>
 						</li>
 						<li class="header-item">
-							<a href="tel:+110001111111" class="header-link link heading">+11 (000) 111-11-11</a>
+							<a href="tel:+110001111111" class="header-link link">+11 (000) 111-11-11</a>
 						</li>
 					</ul>
 				</address>
@@ -48,7 +48,7 @@
 			<section class="hero">
 				<div class="container">
 					<h1 class="hero-subject">Effective Solutions for Your Business</h1>
-					<button type="button" class="hero-btn btn">Order Service</button>
+					<button type="button" data-modal-open class="hero-btn btn">Order Service</button>
 				</div>
 			</section>
 			<!--/Hero section-->
@@ -342,5 +342,15 @@
 				</div>
 			</div>
 		</footer>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button type="button" data-modal-close class="modal-close-btn">
+					<svg class="modal-close-btn-icon" width="8" height="8">
+						<use href="./images/close.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
