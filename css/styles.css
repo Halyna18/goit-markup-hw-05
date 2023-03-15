@@ -560,9 +560,13 @@ body {
 	transform: translate(-50%, -50%) scale(0.9);
 }
 .modal-close-btn {
-	display: block;
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
 	width: 24px;
 	height: 24px;
+	padding: 0;
 	margin-left: auto;
 	background: var(--footer-text);
 	border-radius: 50%;
